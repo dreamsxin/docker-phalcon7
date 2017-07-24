@@ -21,7 +21,7 @@ RUN  cd /var/www/cphalcon7/ext && phpize && ./configure && make && make install
 ADD phalcon.ini /etc/php/7.0/mods-available/phalcon.ini
 RUN ln -s /etc/php/7.0/mods-available/phalcon.ini /etc/php/7.0/apache2/conf.d/
 
-Add ./demo /var/www/demo/
+Add ./demo /var/www/html/demo/
 ADD demo.conf /etc/apache2/sites-available/
 RUN a2ensite demo
 RUN a2enmod rewrite
