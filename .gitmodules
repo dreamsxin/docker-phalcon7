@@ -1,0 +1,3 @@
+[submodule "cphalcon7"]
+	path = cphalcon7
+	url = https://github.com/dreamsxin/cphalcon7.git
